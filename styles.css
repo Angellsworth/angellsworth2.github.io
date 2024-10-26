@@ -1,0 +1,92 @@
+/* Styling entire body of page*/
+body {
+    margin: 0; /* Removes default margin applied by browsers */
+    padding: 0; /* Removes default padding applied by browsers */
+    font-family: Arial, sans-serif; /* Sets the font family for the entire page to Arial (or a similar sans-serif font) */
+     
+}
+
+/* Styling the header element */
+header {
+    display: flex; /*  Tells header it is a flex container */
+    justify-content: space-evenly; /*  evenly spaces child elements inside the container */
+    align-items: center;/*  Vertically center the child elements inside the container */
+    background-color: #b3b3b1ec;/*  back-ground color */
+    color: white; /* font color  */
+    padding: 20px;/*  padding INSIDE the header to create space around the content */
+    width: 100%; /* makes sure the header spans the entire width of the screen */
+    margin: 0 auto; /* centers header horizontally on the page */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* adds a slight shadow below the header to give it depth*/
+    flex-wrap: wrap; /* makes sure that the child elements wrap onto a new line if there isn't enough space*/
+}
+
+/* Styling the image inside the header */
+header img {
+    border-radius: 20px; /*round the corners of the element (if it's square), adds rounded corners*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* add soft shadow to make it "float"*/
+    max-width: 100%; /* ensures the image is responsive */
+    height: auto; /*maintains image's aspect ration while resizing*/
+    object-fit: cover; /* crops the image without distorting */
+}
+
+/* nav here  */
+
+/* Styling the .intro class */
+.intro{
+    max-width: 500px; /* limits the width for better readability */
+    text-align: left; /* aligns text to the left, right, center */
+}
+/*Styling for entire Main Element*/
+main {
+    display: flex;/*  Tells Main it is a flex container */
+    flex-direction:column; /*Stacks child elements (sections) vertically in a column */
+    align-items: center; /* Alight child elements horizontally in the center */
+    padding: 30px; /* adds padding AROUND the main content for better spacing */
+}
+ /* Styling for the Section Elements */
+ section {
+    background-color: #f9f9f9; /*background color of each section*/
+    color: #5C525B; /*font color */
+    border-radius: 8px; /*adds rounded corners to section */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /*box shadow making it "float"*/
+    padding: 20px; /*adds space INSIDE each section "card"*/
+    margin-bottom: 20px; /* adds space at the BOTTOM of each "card */
+    width: 100%; /*makes the section take up the full width of the MAIN container*/
+    max-width: 800px; /* limits the width to a MAX of 800px */
+ }
+
+ li {
+    margin-bottom: 15px; /*Add space between EACH list item */
+ }
+
+footer {
+    display: flex; /*  Tells header it is a flex container */
+    justify-content: center; /*  spaces between child elements inside the container */
+    align-items: center;/*  Vertically center the child elements inside the container */
+    background-color: #b3b3b1;/*  back-ground color */
+    padding: 20px;/*  padding INSIDE the header to create space around the content */
+    width: 100%; /* makes sure the header spans the entire width of the screen */
+    margin: 0 auto; /* centers header horizontally on the page */
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    height: 100px;
+    gap: 35px;
+}
+
+a {
+    font-size: 30px; /* Current font size */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #3a3139; /* Default link color */
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; /* Smooth transition for both scaling and color change */
+}
+
+a:hover {
+    transform: scale(1.2); /* Increases the size of the link to 120% */
+    color: #3a3139; /* Optional: change color when hovered */
+    font-weight: 600;
+    text-decoration: underline;
+}
+#greeting {
+    font-family:fantasy;
+}
